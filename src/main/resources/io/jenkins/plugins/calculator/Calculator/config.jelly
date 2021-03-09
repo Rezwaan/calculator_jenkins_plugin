@@ -1,0 +1,17 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+    <f:entry title="${%First Number}" field="firstNumber">
+        <f:number />
+    </f:entry>
+    <f:entry title="${%Second Number}" field="secondNumber">
+        <f:number />
+    </f:entry>
+    <f:radioBlock name="Calculator" title="${%Addition}" value="add" inline="true" help="Please check If you want to add these numbers" checked="false"></f:radioBlock>
+                
+    <f:radioBlock name="Calculator" title="${%Subtraction}" value="sub" inline="true" help="Please check If you want to subtract these numbers" checked="false"></f:radioBlock>
+    
+    <f:radioBlock name="Calculator" title="${%Multiply}" value="mul" inline="true" help="Please check If you want to multiply these numbers" checked="false"></f:radioBlock>
+    
+    <f:radioBlock name="Calculator" title="${%Divide}" value="div" inline="true" help="Please check If you want to divide these numbers" checked="false"></f:radioBlock>
+    
+</j:jelly>
